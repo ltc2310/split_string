@@ -9,13 +9,18 @@
 * UI: ant design 
 
 ### Project structure:
-<img src='https://imgur.com/a/jOkcKM1' width="300">
+<img src='https://i.imgur.com/4cgkhqH.png' width="300">
 
 ### Features:
-[Comment](https://imgur.com/a/huZDvd4)
+* Add comment.
+
+<img src='https://i.imgur.com/qwqkSG4.png' width="600">
+
 
 * Handle error when user input invalid message.
-[Error](https://imgur.com/a/XwPLaoH)
+
+<img src='https://i.imgur.com/RLxIdG5.png' width="600">
+
 
 
 ### Installation:
@@ -28,6 +33,6 @@
 ### Referral link:
 - [Create react app](https://reactjs.org/docs/create-a-new-react-app.html)
 - [Setting up redux with react app](https://medium.com/backticks-tildes/setting-up-a-redux-project-with-create-react-app-e363ab2329b8)
--[Comment Ant Design](https://ant.design/components/comment/)
+- [Comment Ant Design](https://ant.design/components/comment/)
 
 
