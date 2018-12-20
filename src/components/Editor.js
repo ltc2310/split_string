@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Form, Button, Input } from 'antd';
 const TextArea = Input.TextArea;
 
@@ -24,4 +25,16 @@ export class Editor extends React.Component {
             </div>
         );
     }
+}
+
+Editor.defaultProps = {
+   onChange: () => {},
+   onSubmit: () => {},
+}
+
+Editor.propTypes = {
+    onChange: PropTypes.func.isRequired,
+    onSubmit : PropTypes.func.isRequired,
+    submitting : PropTypes.bool,
+    value: PropTypes.string,
 }

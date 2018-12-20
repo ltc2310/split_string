@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Comment, List } from 'antd';
 
 export class CommentList extends React.Component {
@@ -9,11 +10,18 @@ export class CommentList extends React.Component {
             <div style={{ margin: 'auto', width: '50%' }}>
                  <List
                     dataSource={comments}
-                    // header={`${comments.length} ${comments.length > 1 ? 'replies' : 'reply'}`}
                     itemLayout="horizontal"
-                    renderItem={props => <Comment {...props} />}
+                    renderItem={comment => <Comment content={comment} />}
                 />
             </div>
         );
     }
+}
+
+CommentList.defaultProps = {
+    comments: [],
+}
+
+CommentList.propTypes = {
+    comments: PropTypes.array.isRequired,
 }
