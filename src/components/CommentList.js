@@ -7,7 +7,7 @@ export class CommentList extends React.Component {
     render(){
         const { comments } = this.props;
         return (
-            <div style={{ margin: 'auto', width: '50%' }}>
+            <div style={{ margin: 'auto', width: '70%' }}>
                  <List
                     dataSource={comments}
                     itemLayout="horizontal"

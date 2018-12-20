@@ -2,7 +2,7 @@ import { types  } from '../actions/commentAction';
 import { splitMessage } from '../utils/splitMessage';
 
 const defaultState = {
-  comments : [],
+  comments : []
 }; 
 
 const addComment = (commentList, comment ) => {

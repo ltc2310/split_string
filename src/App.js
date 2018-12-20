@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Comment } from 'antd';
+import { Comment, Card } from 'antd';
 import  { Editor, CommentList }  from './components';
 import { actions  } from './actions/commentAction';
 import { selectors } from './reducers/commentReducer';
@@ -42,24 +42,27 @@ class App extends React.Component {
   render() {
     const { submitting, value } = this.state;
     const { comments } = this.props;
-    console.log(comments);
 
     return (
-      <div>
-        {comments.length > 0 && <CommentList comments={comments} />}
-        <div style={{ margin: 'auto', width: '50%' }}>
-          <Comment
-            content={(
-              <Editor
-                onChange={this.handleChange}
-                onSubmit={this.handleSubmit}
-                submitting={submitting}
-                value={value}
-              />
-            )}
-          />
-        </div>
-      </div>
+      <React.Fragment>
+        <div style={{paddingTop : 50}}> 
+        <Card title="Zalora Assigment" bordered={true}  style={{ margin: 'auto', width: '50%' }}>
+          {comments.length > 0 && <CommentList comments={comments} />}
+          <div style={{ margin: 'auto', width: '70%' }}>
+            <Comment
+              content={(
+                <Editor
+                  onChange={this.handleChange}
+                  onSubmit={this.handleSubmit}
+                  submitting={submitting}
+                  value={value}
+                />
+              )}
+            />
+          </div>
+        </Card>
+        </div> 
+      </React.Fragment>
     );
   }
 }

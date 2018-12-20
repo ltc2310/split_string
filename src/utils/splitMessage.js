@@ -15,7 +15,7 @@ export const splitMessage = (message, splitSize = 50) => {
     const splitBySpace = trimedMessage.split(" ");
     splitBySpace.forEach((word) => {
         if (word.length > 50) {
-            throw new Error("invalid message");
+            throw new Error(`message contains a span of non-whitespace characters longer than 50 characters`);
         }
     });
     let reservedString = null;
