@@ -1,4 +1,4 @@
-# Zalora Assigment
+# Split String
 ### Description:
 * A web application that serves the Tweeter interface.
 * Allow the user to input and send messages.
